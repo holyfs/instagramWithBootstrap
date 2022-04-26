@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/71bf80351b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Instagram photo feed</title>
+</head>
+<body >
+    <div>
+      <!--Cuerpo-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" role="navigation">
+        <div class="container">
+          <!--Barra de navegacion-->
+    
+    
+          <a class="navbar-brand bd-highlight" href="#">
+            <i class="fa-brands fa-instagram fa-lg"></i> <i> <strong style="font-family: 'Lato', sans-serif";>Instagram</strong></i>
+          </a>
+          <div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Create a new post
+            </button>
+    
+           
+            <div class="btn-group">
+              <!--Dropdown-->
+              <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+                <i class="fa-solid fa-gear"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Log Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+      <div>
+        <!--botones para cambiar de pagina-->
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="btn btn-secondary" href="muro.html"><i class="fa-solid fa-table-cells"></i></a></li>
+            <li class="page-item"><a class="btn btn-light" href="index.html"><i class="fa-solid fa-square" style="color: grey !important;" ></i></a></li>
+          </ul>
+        </nav>
+      </div>
+      <!--index-->
+      <div class="bg-secondary">
+        <div class="d-flex flex-row">
+          <div class="col-4">
+            <div class="card" style="border: solid 1px white;">
+              <img src="https://loremflickr.com/550/300" class="card-img-top" alt="..." style="padding: none;">
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="border: solid 1px white;">
+              <img src="https://loremflickr.com/550/300?random=1" class="card-img-top" alt="..." style="padding: none;">
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="border: solid 1px white;">
+              <img src="https://loremflickr.com/550/300?random=2" class="card-img-top" alt="..." style="padding: none;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-row">
+        <div class="col-4">
+          <div class="card" style="border: solid 1px white;">
+            <img src="https://loremflickr.com/550/300?random=3" class="card-img-top" alt="..." style="padding: none;">
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="border: solid 1px white;">
+            <img src="https://loremflickr.com/550/300?random=4" class="card-img-top" alt="..." style="padding: none;">
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="border: solid 1px white;">
+            <img src="https://loremflickr.com/550/300?random=5" class="card-img-top" alt="..." style="padding: none;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-row">
+      <div class="col-4">
+        <div class="card" style="border: solid 1px white;">
+          <img src="https://loremflickr.com/550/300?random=6" class="card-img-top" alt="..." style="padding: none;">
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card" style="border: solid 1px white;">
+          <img src="https://loremflickr.com/550/300?random=7" class="card-img-top" alt="..." style="padding: none;">
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card" style="border: solid 1px white;">
+          <img src="https://loremflickr.com/550/300?random=8" class="card-img-top" alt="..." style="padding: none;">
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- Modal -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+    
+          <textarea name="textarea" id="" cols="60" rows="2"></textarea>
+          <div class="pb-3">
+
+            <button type="button" class="btn btn-light btn-sm">
+              <i class="fa-solid fa-camera"></i>
+            </button>
+            <button type="button" class="btn btn-light btn-sm">
+              <i class="fa-solid fa-location-dot"></i>
+            </button>
+
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
